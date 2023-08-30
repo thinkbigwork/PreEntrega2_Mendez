@@ -1,7 +1,8 @@
-/* import React from "react"; */
+import React from "react";
 import {  useState, useEffect } from "react";
 import {  getProducts } from "../../services";
 import ItemList from './ItemList';  
+
 
 const ItemListContainer = () => {
     const [items, setItems] = useState([]);
