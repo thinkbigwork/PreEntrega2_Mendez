@@ -1,5 +1,6 @@
 import React from 'react';
 import propTypes from 'propTypes';
+import { Link } from 'react-router-dom';
 
 const ItemList = ({ items }) => {
     return (
@@ -8,9 +9,11 @@ const ItemList = ({ items }) => {
             <ul>
                 {items.map((item) =>(
                   <li key={item.id}>
+                    <Link to={'/item/${item.id}'}>
                     <h3>{item.name}</h3>
                     <p>${item.price}</p>
                     <p>{item.category}</p>
+                    </Link>
                   </li>  
                 ))}
             </ul>
