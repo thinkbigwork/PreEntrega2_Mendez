@@ -1,4 +1,5 @@
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
+
 import { Link } from 'react-router-dom';
 
 const ItemList = ({ items, isLoading }) => {
@@ -24,8 +25,8 @@ const ItemList = ({ items, isLoading }) => {
 };
 
 ItemList.propTypes = {
-    items: propTypes.array.isRequired,
-    isLoading: propTypes.bool,
+    items: PropTypes.array.isRequired,
+    isLoading: PropTypes.bool,
 };
 
 export default ItemList;

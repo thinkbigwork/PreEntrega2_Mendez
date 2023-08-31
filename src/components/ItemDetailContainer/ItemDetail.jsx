@@ -16,6 +16,7 @@ const ItemDetail = ({ item }) => {
 };
 ItemDetail.propTypes = {
     item: PropTypes.object,
+    isLoading: PropTypes.bool,
 };
 
 export default ItemDetail;
